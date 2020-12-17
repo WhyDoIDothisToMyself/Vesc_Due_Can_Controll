@@ -4,6 +4,8 @@ void gotFrameMB2(CAN_FRAME *frame);
 void gotFrameMB3(CAN_FRAME *frame);
 void gotFrameMB6(CAN_FRAME *frame);
 void gotFrame(CAN_FRAME *frame);
+void watchForRangeSpecific(uint8_t mailbox, uint32_t id1, uint32_t id2, bool extended);
+void scanBus();
 void printFrame(CAN_FRAME &frame);
 void printFrame(CAN_FRAME *frame, int filter);
 bool can_init();
